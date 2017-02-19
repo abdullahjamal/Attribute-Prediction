@@ -1,4 +1,4 @@
-require 'aPascal-data'
+require 'data_read'
 require 'nn'
 require 'cutorch'
 require 'cunn'
