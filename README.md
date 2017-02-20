@@ -18,7 +18,10 @@ https://github.com/jhjin/overfeat-torch
 
 #Requirements
 Torch7 (http://github.com/torch/torch7)
+
 torch-svm (https://github.com/koraykv/torch-svm)
+
 matio-ffi.torch (https://github.com/soumith/matio-ffi.torch)
+
 Overfeat Model (https://github.com/jhjin/overfeat-torch)
 
