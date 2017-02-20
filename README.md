@@ -17,10 +17,8 @@ https://github.com/jhjin/overfeat-torch
 4- apascal_svm_train: The code extracts the 4096D features from pre-trained overfeat model and runs svm on top of it.
 
 #Requirements
-```
-Torch7 (http://github.com/torch/torch7
+Torch7 (http://github.com/torch/torch7)
 torch-svm (https://github.com/koraykv/torch-svm)
 matio-ffi.torch (https://github.com/soumith/matio-ffi.torch)
 Overfeat Model (https://github.com/jhjin/overfeat-torch)
 
-```
