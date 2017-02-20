@@ -24,7 +24,6 @@ print(opt.batchSize)
 
 errLogger = optim.Logger(paths.concat(opt1.save, 'Train_error_varII.log'))
 valLogger = optim.Logger(paths.concat(opt1.save, 'Val_error_varII.log'))
-accLogger = optim.Logger(paths.concat(opt1.save, 'Test_accuracy_varII.log'))
 obj_err1 = optim.Logger(paths.concat(opt1.save, '/home/yang/abd/overfeat-torch/mAP_data/Curves/Vgg/Var-III/exp/val_loss.log'))
 
 
