@@ -19,8 +19,6 @@ opt = lapp[[
 torch.setdefaulttensortype('torch.FloatTensor')
 torch.manualSeed(1)
 
-accLogger = optim.Logger(paths.concat(opt1.save, 'Test_svm.log'))
-
 dataset = Dataset('/home/yang/abd/overfeat-torch/aPascal-aYahoo/',
                   '/home/yang/abd/overfeat-torch/aPascal-aYahoo/apascal_images/',
                    '/home/yang/abd/overfeat-torch/aPascal-aYahoo/ayahoo_test_images/',
