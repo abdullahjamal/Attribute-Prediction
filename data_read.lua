@@ -134,12 +134,10 @@ function Dataset:get_test_samples(index)
 
    local data = self.test_data
    
-    for i = 1,1 do
-        local im, attr = self:get_image_attribute_test(data,index)
-        inputs:select(1,i):copy( im )
-        for label_i = 1,64 do
-            labels[label_i][i] = attr[label_i]
-        end
+   local im, attr = self:get_image_attribute_test(data,index)
+   inputs:select(1,i):copy( im )
+    for label_i = 1,64 do
+        labels[label_i][1] = attr[label_i]
     end
     return inputs, labels
 end
@@ -151,14 +149,11 @@ function Dataset:get_val_samples(index)
     end
 
    local data = self.val_data
-   
-    for i = 1,1 do
-        local im, attr = self:get_image_attribute(data, index)
-        inputs:select(1,i):copy( im )
-        for label_i = 1,64 do
-            labels[label_i][i] = attr[label_i]
-        end
-    end
+   local im, attr = self:get_image_attribute(data, index)
+   inputs:select(1,i):copy( im )
+   for label_i = 1,64 do
+       labels[label_i][1] = attr[label_i]
+   end
     return inputs, labels
 end
 
